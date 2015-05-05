@@ -3,16 +3,27 @@
 	<head>
 		<meta charset=“utf-8” />
 		<title>Soduckso</title>
+		<link rel="stylesheet" type="text/css" href="header.css"/>
 	</head>
 	
 	<body>
-		<header>
+		<body>
+		<header id="Navigation_Banner">
+			<img id="logo" src="logo_stevens.gif" alt="Stevens Duck"/>
 			<h1>Soduckso </h1>
 		
 			<nav>
-				<a href = 'food.php'>Home</a> 
-				<a href = 'tag_search.php'>Advanced Search</a>
-				<a href = '#'>Calendar</a> 
+				<ul>
+					<li>
+						<a href = "food.php">Home</a> 
+					</li>
+					<li>
+						<a href = "tag_search.php">Advanced Search</a>
+					</li>
+					<li>
+						<a href = '#'>Calendar</a> 
+					</li>
+				</ul>
 			</nav>
 		</header>
 		
