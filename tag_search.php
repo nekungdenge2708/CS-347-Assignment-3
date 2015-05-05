@@ -3,24 +3,36 @@
 	<head>
 		<meta charset=“utf-8” />
 		<title>Soduckso</title>
+		<link rel="stylesheet" type="text/css" href="tag_search.css"/>
 	</head>
 	
 	<body>
-		<header>
+		<header id="Navigation_Banner">
+			<img id="logo" src="logo_stevens.gif" alt="Stevens Duck"/>
 			<h1>Soduckso </h1>
 		
 			<nav>
-				<a href = "food.php">Home</a> 
-				<a href = "tag search.php">Advanced Search</a>
-				<a href = '#'>Calendar</a> 
+				<ul>
+					<li>
+						<a href = "food.php">Home</a> 
+					</li>
+					<li>
+						<a href = "tag_search.php">Advanced Search</a>
+					</li>
+					<li>
+						<a href = '#'>Calendar</a> 
+					</li>
+				</ul>
 			</nav>
 		</header>
 		
-		<form action="tag_search.php" method="get">
-			<label for="search box"> Enter a type of food: </label>
-			<input id="search box" type="text" name="tag" placeholder="search">
-			<input type="submit" value="Submit">
-		</form>
+		<section id="Search_Bar">
+			<form action="tag_search.php" method="get">
+				<label for="search box"> Enter a type of food: </label>
+				<input id="search box" type="text" name="tag" placeholder="search">
+				<input type="submit" value="Submit">
+			</form>
+		</section>
 	</body>
 </html>
 
