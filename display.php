@@ -61,16 +61,17 @@
 						echo '<p>Serving Time: '.($row["serving_time"]).'</p> <BR>';
 						echo '<p>Description: '.($row["description"]).'</p> <BR>';
 						echo '<p>Rating: '.($row["rating"]).'</p>';
+						
+						echo '<form id="Rating" action="display.php" method="get"> <label for="rate"> How would you rate '.($row["food_name"]).'?   </label> <input id="rate" type="text" name="rating" placeholder="Enter Number from 1-5"> <input type="submit" value="Submit"> </form>';
 					}
 					
 				}
-				
-				echo '<form id="Rating" action="display.php" method="get"> <label for="rate"> How would you rate '.($row["food_name"]).'?</label> <input id="rate" type="text" name="rating" placeholder="Enter Number from 1-5"> <input type="submit" value="Submit"> </form>';
-				
+								
 				
 				$db->disconnect();
 			?>
 			<!-- couldnt get the comment system working fully enough to have it update the database due to improper time management.-->
+
 		</section>
 	</body>
 </html>

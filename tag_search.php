@@ -52,7 +52,7 @@
 					$arr = [];
 					while($row = $result->fetch_assoc()) {
 						array_push($arr, $row);  
-						echo '<a href="display.php?food="'.($row["food_name"]).'">'.($row["food_name"]).'</a>';
+						echo '<a href="display.php?food="'.($row["food_name"]).'">'.($row["food_name"]).'</a> <BR>';
 					}
 					
 					if(count($arr) === 0)
