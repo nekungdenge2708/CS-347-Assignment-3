@@ -1,0 +1,12 @@
+section#search
+{
+	border-radius: 25px;
+	background: linear-gradient(to right, white, white, #8B0000);
+	width: 95%;
+	padding: 25px;
+}
+section#search>h1, section#search>h2, form#Search_Bar>label
+{
+	font-size: 150%;
+	font-weight: normal;
+}
